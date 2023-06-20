@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Netflix</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./Nicoflix/styles.css">
+</head>
+<body>
+    <main>
+        <header class="header-movies">
+            <div class="container">
+                <h1 class="header-movies-title">Nicoflix</h1>
+            </div>
+        </header> <!-- fim-header-->
+
+        <section class="section-movies">
+            <div class="container">
+                <div class="app-movies">
+                    <h2 class="app-movies-title">
+                        Filmes, séries, e muito mais. Sem limites
+                    </h2>
+                    <h3 class="app-movies-subtitle">
+                        Assista quando quiser. Onde quiser.
+                    </h3>
+                    <p class="app-movies-msg">
+                        Pronto para assistir? Informe seu email para ativar sua assinatura.
+                    </p>
+                    <form class="form">
+                        <input type="text" class="form-input" placeholder="Informe um filme">
+                        <input type="submit" class="form-submit" value="Vamos lá!">
+                    </form>
+                </div> <!-- app-movies -->
+                <ul class="app-movies-all" id="movies"></ul>
+            </div> <!-- container -->
+        </section>
+    </main>
+    
+    <!-- scripts -->
+    <script src="./Nicoflix/scripts.js"></script>
+</body>
+</html>

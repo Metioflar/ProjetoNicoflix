@@ -1,0 +1,178 @@
+/*  INFOS:
+------------BACKGROUND-------
+https://www.notebookcheck.info/fileadmin/Notebooks/News/_nc3/netflixteaser.png
+-------------- API ------
+http://www.omdbapi.com/
+API KEY -----
+e341acff
+*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+:root{
+    --fonteprimaria: 'Bebas Neue';
+    --fontesecundaria: 'Roboto';
+}
+body {
+    background-color: #000;
+}
+main {
+    background-image: url('https://www.notebookcheck.info/fileadmin/Notebooks/News/_nc3/netflixteaser.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+main::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.68);
+}
+.header-movies {
+    position: relative;
+    padding: 15px;
+    width: 100%;
+    z-index: 9;
+    
+}
+.header-movies-title {
+    color: red;
+    font-family: var(--fonteprimaria);
+    font-size: 40px;
+    text-shadow: 2px 2px #000;
+}
+.section-movies {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    width: 100%;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+}
+.app-movies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 60px 0;
+    z-index: 9;
+}
+.app-movies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 60px 0;
+    z-index: 9;
+}
+.app-movies-title {
+    color: #fff;
+    font-family: var(--fontesecundaria);
+    font-size: 54px;
+    max-width: 70%;
+    text-align: center;
+}
+.app-movies-subtitle {
+    color: #fff;
+    font-family: var(--fontesecundaria);
+    font-size: 25px;
+    font-weight: 300;
+    margin: 20px 0 30px;
+}
+.app-movies-msg {
+    color: #fff;
+    font-size: 18px;
+    font-family: var(--fontesecundaria);
+    margin-bottom: 20px;
+}
+.app-movies-all {
+    display: grid; 
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, 14.46%);
+    position: relative;
+    z-index: 9;
+}
+.app-movies-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    transition: .3s;
+}
+.app-movies-card:hover {
+    top: -5px;
+}
+.app-movies-figure {
+    height: 230px;
+    box-shadow: 0px 0px 9px 3px rgba(255, 255, 255, 0.23);
+}
+.app-movies-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.app-movies-legend {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-movies-ano {
+    color:rgba(255, 255, 255, 0.76);
+    font-family: var(--fontesecundaria);
+    font-size: 13px;
+    background-color: #e50914;
+    max-width: 30px;
+    padding: 4px 10px;
+    line-height: 1;
+    margin: 8px 0px;
+    border-radius: 2px;
+}
+
+.app-movies_title {
+    color: #fff;
+    font-family: Helvetica; 
+    font-size: 16px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.form-input {
+    border: 0;
+    background-color: #fff;
+    border-radius: 0;
+    padding: 15px 20px;
+    width: 35%;
+}
+.form-submit {
+    border: 0;
+    background-color: #e50914;
+    cursor: pointer;
+    color: #fff;
+    font-size: 25px;
+    padding: 15px 30px;
+    transition: .4s;
+}
+
+.form-submit:hover {
+    background-color: #c70913;
+}
